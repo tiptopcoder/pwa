@@ -32,7 +32,7 @@
   },
   "scripts": {
     "start:dev": "REACT_APP_SOCKET_SERVER='http://localhost:3001' PORT=3000 concurrently \"react-scripts start\" \"nodemon server.js\"",
-    "start": "NODE_ENV=production PORT=80 node server.js",
+    "start": "NODE_ENV=production node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
