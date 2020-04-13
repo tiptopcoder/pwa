@@ -7,9 +7,10 @@ const bodyParser = require('body-parser');
 const colors = require('@material-ui/core/colors');
 const moment = require('moment');
 const cors = require('cors');
+const port = process.env.PORT || 3001;
 
-server.listen(3001, () => {
-  console.log('Server start listening on port 3001...');
+server.listen(port, () => {
+  console.log(`Server start listening on port ${port}...`);
 });
 
 app.use(bodyParser.json());
