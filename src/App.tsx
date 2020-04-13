@@ -57,7 +57,7 @@ const initialState: AppState = {
 
 const reducer = (state: AppState, newState: AppState): AppState => ({ ...state, ...newState });
 
-const socket = io.connect(process.env.REACT_APP_SOCKET_SERVER as string);
+const socket = io.connect((process?.env?.REACT_APP_SOCKET_SERVER as string) || '');
 
 function App() {
   const classes = useStyles();
